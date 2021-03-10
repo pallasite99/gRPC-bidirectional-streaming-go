@@ -1,1 +1,39 @@
-syntax="proto3"
+syntax="proto3";
+
+package users;
+option go_package = ".;users";
+
+// Users Service
+// This is the rpc endpoint definition
+// Accepts stream User message as request,
+// and returns a stream response
+service Users {
+  // CreateUser
+  // The stream keyword is used for both request and 
+  // response, indicating this is a bidirectional stream
+  rpc CreateUser(stream User) returns (stream CreateUserRes) {};
+}
+
+// The request message representation
+message User {
+  // User id
+  string id = 1;
+  // User name
+  string name = 2;
+  // User last name
+  string last_name = 3;
+  // User age
+  int32 age = 4;
+}
+
+// The response message representation
+message CreateUserRes {
+  // User id
+  string user_id = 1;
+  // Flag to indicate if the user was successfully processed
+  bool success = 2;
+  // Error message
+  repeated string errors = 3;
+}
+
+// Client will send a user object, and the server will send a CreateUserRes message to indicate how the user was processed.
