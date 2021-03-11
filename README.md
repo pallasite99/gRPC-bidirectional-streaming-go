@@ -10,7 +10,7 @@
 4. go implementation of gRPC (using ```go get``` command)
 5. Some additional ```go get``` commands may be required if Makefile can't resolve them.
 
-(These are included in **go.mod** file in require manually for reference)
+(These are included in **go.mod** file ==> 'require' manually for reference)
 
 ## If you want to generate proto headers for Go manually
 * cd into the proto directory and enter in terminal:
