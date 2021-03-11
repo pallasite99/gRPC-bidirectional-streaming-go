@@ -5,7 +5,7 @@ import (
 	"io"
 	"net"
 	//users "proto_bi_directional_stream"
-	users "github.com/pallasite99/gRPC-bidirectional-streaming-go/tree/master/proto"
+	users "github.com/pallasite99/gRPC-bidirectional-streaming-go/proto"
 
 	log "github.com/prometheus/common/log"
 
