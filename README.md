@@ -15,15 +15,19 @@
 ## If you want to generate proto headers for Go manually
 * cd into the proto directory and enter in terminal:
 
-```protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative users.proto```
+```terminal
+protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative users.proto
+```
 
-## If you want to generate your own go.mod file
+## Generating a go.mod file
 
 * Enter in terminal:
 
 ```terminal
 go mod init <link-to-github-repo>
 ```
+
+* This file is required else you will get a ***package is not part of a module*** error
 
 ## To resolve conflicts with go modules like version:latest, upgrade, etc...
 
@@ -35,3 +39,27 @@ go mod tidy
 
 * This should fetch any missing dependencies
 
+## To build this example
+
+* Enter in terminal
+
+```terminal
+make all
+```
+* This command will generate proto headers, client and server executables
+
+## Running the example
+
+1. First start the server with the command:
+
+```terminal
+./ser
+```
+
+2. Then start the client using the command:
+
+```terminal
+./cli
+```
+
+* As the output you will see a stream of messages ith requests on server and corresponding responses on the client side
