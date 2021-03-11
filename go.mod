@@ -1,6 +1,6 @@
 module github.com/pallasite99/gRPC-bidirectional-streaming-go
 
-go 1.12
+go 1.16
 
 require (
 	github.com/golang/protobuf v1.4.1
