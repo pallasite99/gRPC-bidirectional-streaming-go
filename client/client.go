@@ -8,7 +8,7 @@ import (
 	"time"
 
 	//users "proto_bi_directional_stream"
-	users "https://github.com/pallasite99/gRPC-bidirectional-streaming-go/tree/master/proto"
+	users "github.com/pallasite99/gRPC-bidirectional-streaming-go/tree/master/proto"
 
 	"google.golang.org/grpc"
 )
