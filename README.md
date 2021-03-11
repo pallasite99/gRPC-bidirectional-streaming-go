@@ -1,6 +1,8 @@
 # gRPC-bidirectional-streaming-go 
 (tested on Linux-Ubuntu 16.04 Xenial Xerus)
 
+![go-gRPC bidirectional streaming](https://miro.medium.com/max/700/1*Ug3CAac6nPclg87bxmRBoA.png)
+
 * An example to implement gRPC bidirectional streaming calls using Go and Protobuf
 
 ### Requirements
