@@ -12,9 +12,14 @@
 
 (These are included in **go.mod** file in require manually for reference)
 
+## If you want to generate proto headers for Go manually
+* cd into the proto directory and enter in terminal:
+
+```protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative users.proto```
+
 ## If you want to generate your own go.mod file
 
-Enter in terminal:
+* Enter in terminal:
 
 ```terminal
 go mod init <link-to-github-repo>
@@ -22,7 +27,7 @@ go mod init <link-to-github-repo>
 
 ## To resolve conflicts with go modules like version:latest, upgrade, etc...
 
-Enter in terminal:
+* Enter in terminal:
 
 ```terminal
 go mod tidy
