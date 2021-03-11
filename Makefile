@@ -9,14 +9,14 @@ server: protoc
 	#go build -o server \
 		#github.com/pahanini/go-grpc-bidirectional-streaming-example/src/server
 
-	go build -o server github.com/pallasite99/gRPC-bidirectional-streaming-go/tree/master/server
+	go build -o server github.com/pallasite99/gRPC-bidirectional-streaming-go/server
 
 client: protoc
 	@echo "Building client"
 	#go build -o client \
 		#github.com/pahanini/go-grpc-bidirectional-streaming-example/src/client
 	
-	go build -o client github.com/pallasite99/gRPC-bidirectional-streaming-go/tree/master/client
+	go build -o client github.com/pallasite99/gRPC-bidirectional-streaming-go/client
 clean:
 	go clean github.com/pallasite99/gRPC-bidirectional-streaming-go/...
 	rm -f server client
