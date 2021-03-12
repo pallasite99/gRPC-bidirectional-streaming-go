@@ -8,9 +8,10 @@
 ### Requirements
 1. protoc (v3.x and above)
 2. go (v1.16)
-3. protoc plugin for go
-4. go implementation of gRPC (using ```go get``` command)
-5. Some additional ```go get``` commands may be required if Makefile can't resolve them.
+3. git
+4. protoc plugin for go
+5. go implementation of gRPC (using ```go get``` command)
+6. Some additional ```go get``` commands may be required if Makefile can't resolve them.
 
 (These are included in **go.mod** file ==> 'require' manually for reference)
 
