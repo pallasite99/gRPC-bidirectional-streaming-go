@@ -1,6 +1,5 @@
 #! /bin/bash
 
-sudo apt install python-pip
 sudo apt install unzip 
 
 # Make sure you grab the latest version of protoc
@@ -34,3 +33,6 @@ go get -u github.com/golang/protobuf/protoc-gen-go
 # Update your PATH so that the protoc compiler can find the plugins:
 export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
+
+#Load the config once again (just to be safe)
+sudo ldconfig
