@@ -13,7 +13,7 @@
 5. go implementation of gRPC (using ```go get``` command)
 6. Some additional ```go get``` commands may be required if Makefile can't resolve them.
 
-(These are included in **go.mod** file ==> 'require' manually for reference)
+(You can install these manually [very painful] or use the `req-gRPC.sh` file provided for Ubuntu 16.04)
 
 ## If you want to generate proto headers for Go manually
 * cd into the proto directory and enter in terminal:
