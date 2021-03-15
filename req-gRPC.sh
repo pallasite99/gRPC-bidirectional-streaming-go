@@ -24,15 +24,19 @@ curl -OL https://golang.org/dl/go1.16.2.linux-amd64.tar.gz
 # Then extract the files to /usr/local directory
 sudo rm -rf /usr/local/go && tar -C /usr/local -xzf go1.16.2.linux-amd64.tar.gz
 
+# Update your PATH so that the protoc compiler can find the plugins:
+# This only works for the current session. You need to change your
+# profile file for the change to be permanent, else you can just set 
+# these two commands for go to work and be detected.
+export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
+
 # Install protocol compiler plugins for Go
 export GO111MODULE=on  # Enable module mode
 go get google.golang.org/protobuf/cmd/protoc-gen-go \
          google.golang.org/grpc/cmd/protoc-gen-go-grpc
 
 go get -u github.com/golang/protobuf/protoc-gen-go
-# Update your PATH so that the protoc compiler can find the plugins:
-export PATH=$PATH:/usr/local/go/bin
-export PATH="$PATH:$(go env GOPATH)/bin"
 
 #Load the config once again (just to be safe)
 sudo ldconfig
