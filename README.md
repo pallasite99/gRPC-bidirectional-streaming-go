@@ -40,7 +40,7 @@ go mod init <link-to-github-repo>
 go mod tidy
 ```
 
-* This should fetch any missing dependencies
+* This formats the go.mod file
 
 ## To build this example
 
