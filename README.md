@@ -65,4 +65,4 @@ make all
 ./cli
 ```
 
-* As the output you will see a stream of messages with requests on server and corresponding responses on the client side as a gRPC bidirectional stream.
+* As the output you will see a stream of messages with requests on server and corresponding responses on the client side as a gRPC bidirectional stream
