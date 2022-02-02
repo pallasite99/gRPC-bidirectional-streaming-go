@@ -22,7 +22,7 @@ curl -OL https://golang.org/dl/go1.16.2.linux-amd64.tar.gz
 
 # Remove previous installation of go (if present)
 # Then extract the files to /usr/local directory
-sudo rm -rf /usr/local/go && tar -C /usr/local -xzf go1.16.2.linux-amd64.tar.gz
+sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go1.16.2.linux-amd64.tar.gz
 
 # Update your PATH so that the protoc compiler can find the plugins:
 # This only works for the current session. You need to change your
